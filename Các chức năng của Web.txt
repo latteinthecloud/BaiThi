@@ -1,0 +1,7 @@
+- Đăng ký / Đăng nhập
+- Sau khi đăng nhập sẽ hiển thị trang chính chứa các sản phẩm. Có thể lọc loại sản phẩm thông qua chọn loại (Điện thoại, Thời trang,..)
+- Click vào tên sản phẩm để hiện chi tiết sản phẩm.
+- Logout ở trên cùng bên phải
+- Vào trang Admin ở trên cùng bên trái
+- Có danh mục sản phẩm, thêm, sửa, xóa sản phẩm.
+

@@ -1,0 +1,41 @@
+﻿@model TH.Models.Product
+
+@{
+    ViewData["Title"] = "ProInfo";
+}
+
+<h1>Thông tin</h1>
+
+<div>
+    <h4>Sản phẩm</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProductCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Url.Content($"../ProductImg/{Model.Picture}")" alt="@Model.ProductName" style="max-width: 200px; height: auto;" />
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UnitPrice)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Trở về danh sách hàng hóa</a>
+</div>
